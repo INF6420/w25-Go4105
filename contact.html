@@ -3,30 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diamond Beckom's Technical Portfolio</title>
+    <title>Contact - Diamond Beckom's Technical Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
             <img src="images/logo.png" alt="DB's logo" width="270" height="80">
             <ul>
-                <li><a href= "exp_projects.html">Explore Projects</a></li>
-                <li><a href= "about_me.html">About Me</a></li>
-                <li><a href= "contact.html">Contact</a></li>
+                <!-- Home Button -->
+            <li><a href="index.html" class="home-button">Home</a></li>
+                <li><a href="exp_projects.html">Explore Projects</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li> <!-- Active Class -->
             </ul>
         </nav>    
     </header>
+
     <main>
-        
+        <section class="contact-section">
+            <h1>Contact Me</h1>
+            <p>If you have any questions or just want to say hello, feel free to reach out to me using the form below. I'd love to connect with you!</p>
+
+            <!-- Contact Form -->
+            <form action="submit_form.php" method="POST" class="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="6" required placeholder="Enter your message here"></textarea>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
     </main>
+
     <footer>
-        <div>
+        <div class="footer-container">
             <h2>Say Hello!</h2>
-            <label for="footer-email">Reach Out:</label>
-
-  <input type="email" id="footer-email" placeholder="Enter your email">
-
-  <button type="submit">Submit</button>
+            <p>Feel free to reach out to me through email or connect with me on LinkedIn.</p>
+            
+            <div class="footer-links">
+                <div class="contact-form">
+                    <label for="footer-email">Reach Out:</label>
+                    <input type="email" id="footer-email" placeholder="Enter your email">
+                    <button type="submit">Submit</button>
+                </div>
+    
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/diamondbeckom-329b35128/" target="_blank" class="linkedin-link">
+                        <button class="linkedin-button">Connect on LinkedIn</button>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

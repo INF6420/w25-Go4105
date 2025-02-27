@@ -4,29 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diamond Beckom's Technical Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <nav>
             <img src="images/logo.png" alt="DB's logo" width="270" height="80">
             <ul>
-                <li><a href= "exp_projects.html">Explore Projects</a></li>
-                <li><a href= "about_me.html">About Me</a></li>
-                <li><a href= "contact.html">Contact</a></li>
+                <!-- Home Button -->
+            <li><a href="index.html" class="home-button">Home</a></li>
+            <li><a href="exp_projects.html" class="active">Explore Projects</a></li> <!-- Active Class -->
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>    
     </header>
+    
     <main>
-        
+        <!-- My Projects Section -->
+        <section class="projects-section">
+            <div class="section-header">
+                <h2>My Projects!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+            </div>
+    
+        </section>
+
+        <!-- Project 1 -->
+        <section class="project">
+            <h3>Project Title 1</h3>
+            <p>Brief description of the project goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Download Document</button>
+            <div class="project-image">
+                <!-- Add your image later -->
+                <img src="images/project1.jpg" alt="Project 1 Image">
+            </div>
+        </section>
+
+        <!-- Project 2 -->
+        <section class="project">
+            <h3>Project Title 2</h3>
+            <p>Brief description of the project goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Download Document</button>
+            <div class="project-image">
+                <!-- Add your image later -->
+                <img src="images/project2.jpg" alt="Project 2 Image">
+            </div>
+        </section>
+
+        <!-- Project 3 -->
+        <section class="project">
+            <h3>Project Title 3</h3>
+            <p>Brief description of the project goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Download Document</button>
+            <div class="project-image">
+                <!-- Add your image later -->
+                <img src="images/project3.jpg" alt="Project 3 Image">
+            </div>
+        </section>
     </main>
+
     <footer>
-        <div>
+        <div class="footer-container">
             <h2>Say Hello!</h2>
-            <label for="footer-email">Reach Out:</label>
-
-  <input type="email" id="footer-email" placeholder="Enter your email">
-
-  <button type="submit">Submit</button>
+            <p>Feel free to reach out to me through email or connect with me on LinkedIn.</p>
+            
+            <div class="footer-links">
+                <div class="contact-form">
+                    <label for="footer-email">Reach Out:</label>
+                    <input type="email" id="footer-email" placeholder="Enter your email">
+                    <button type="submit">Submit</button>
+                </div>
+    
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/diamondbeckom-329b35128/" target="_blank" class="linkedin-link">
+                        <button class="linkedin-button">Connect on LinkedIn</button>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

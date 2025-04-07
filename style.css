@@ -252,12 +252,14 @@ section {
     background-color: #ffffff;
     transition: border-color 0.3s ease;
     width: 100%;
+    resize: vertical;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
     border-color: #64ffda;
     outline: none;
+    resize: vertical;
 }
 
 .contact-form button {
@@ -347,6 +349,7 @@ footer .linkedin-button:hover {
     .contact-form input,
     .contact-form textarea,
     .contact-form button {
+        resize: vertical;
         width: 100%;
     }
 }

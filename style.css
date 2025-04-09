@@ -172,37 +172,6 @@ section {
     background-color: #64ffda;
 }
 
-/* Fun Facts Section */
-.fun-facts {
-    background-color: #0a192f;
-    padding: 40px 20px;
-    border-radius: 10px;
-    margin-bottom: 40px;
-}
-
-.fun-facts h2 {
-    color: #ffffff;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.fun-facts .fact-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.fun-facts .fact-container div {
-    text-align: center;
-    color: #ffffff;
-}
-
-.fun-facts img {
-    border-radius: 10px;
-    border: 2px solid #64ffda;
-    margin-bottom: 20px;
-}
-
 /* Contact Section */
 .contact-section {
     background-color: #f9f9f9;
@@ -212,10 +181,12 @@ section {
     margin: 60px auto;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Garamond', serif;
 }
 
 .contact-section h1 {
     color: #0a192f;
+    font-family: 'Garamond', serif;
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 30px;
@@ -277,6 +248,7 @@ section {
 .contact-form button:hover {
     background-color: #64ffda;
 }
+
 
 /* Footer */
 footer {
@@ -364,7 +336,7 @@ nav ul li a.active {
 /* Default Navigation Link Style */
 nav ul li a {
     text-decoration: none;
-    color: #0a192f; /* Dark text color */
+    color: white;
     font-weight: bold;
     padding: 10px 15px;
     transition: color 0.3s ease, background 0.3s ease;
@@ -379,7 +351,7 @@ nav ul li a:hover {
 
 /* Active Navigation Link Style */
 nav ul li a.active {
-    color: #0a192f; /* Keep the dark color when active */
+    color: white; 
     font-weight: bold;
     border-bottom: 2px solid #64ffda; /* Underline effect */
 }
@@ -388,4 +360,121 @@ nav ul li a.active {
 nav ul li a.active:hover {
     color: #ffffff; 
     background: #64ffda; /* Keep background effect when hovered */
+}
+
+.fun-facts-section {
+    background-color: #f0f0f0;
+    padding: 40px;
+    text-align: center;
+}
+
+.fun-facts {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fact {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.fact img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Global Reset & Layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header Styling */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+}
+
+
+/* Section Styling */
+main section {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+/* Explore Projects Section */
+.explore-projects-section {
+    text-align: center;
+}
+
+/* Resume Download Section */
+.resume-download-section {
+    text-align: center;
+    background-color: #e8e8e8;
+}
+
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Fun Facts Section */
+.fun-facts-section {
+    background-color: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.fun-facts {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fact {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+
+.fact img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Add a wrapper to keep the fun facts at the bottom */
+.main-content {
+    padding-bottom: 120px; /* Add enough space for the fun facts section */
 }
